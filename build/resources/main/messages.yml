@@ -1,0 +1,111 @@
+# IceBoatRacing Messages (English)
+# Use & for color codes and {variable} for placeholders
+
+# General Messages
+prefix: "&b[IceBoatRacing]&r "
+no-permission: "{prefix}&cYou do not have permission to use this command!"
+players-only: "{prefix}&cThis command can only be executed by players!"
+unknown-command: "{prefix}&cUnknown command! Use &6/ibr help&c for help."
+
+# Race Messages
+race:
+  joined: "{prefix}&aYou joined arena &6{arena}&a! ({players}/{max} players)"
+  left: "{prefix}&cYou left the arena."
+  already-in-race: "{prefix}&cYou are already in a race!"
+  not-in-race: "{prefix}&cYou are not in a race!"
+  arena-not-found: "{prefix}&cArena &6{arena}&c not found!"
+  join-failed: "{prefix}&cCould not join arena &6{arena}&c!"
+  leave-failed: "{prefix}&cError while leaving the race!"
+  countdown: "{prefix}&eRace starts in &6{time}&e seconds!"
+  started: "{prefix}&aRace started! Good luck!"
+  finished: "{prefix}&6Race finished!"
+  finished-position: "{prefix}&aCongratulations! You finished in position &6{position}&a!"
+  checkpoint-reached: "{prefix}&aCheckpoint &6{checkpoint}&a/&6{total}&a reached!"
+  reset: "{prefix}&eTeleported back to last checkpoint."
+  manual-reset: "{prefix}&eManual reset performed."
+  reset-cooldown: "{prefix}&cReset cooldown active! Please wait a moment."
+  cannot-exit-boat: "{prefix}&cYou cannot leave the boat during a race!"
+  no-teleport: "{prefix}&cTeleportation is not allowed during the race!"
+  results:
+    header: "&b&l▬▬▬ Race Results ▬▬▬"
+    position: "&6{rank}. &e{player} &7- &f{time} &7({checkpoints} checkpoints)"
+
+# Power-up Messages
+powerup:
+  collected: "{prefix}&aCollected power-up &6{type}&a!"
+
+# Command Messages
+commands:
+  help:
+    header: "&b&l▬▬▬ IceBoatRacing Help ▬▬▬"
+    list: "&6/ibr list &7- Shows all available arenas"
+    info: "&6/ibr info <arena> &7- Shows arena information"
+    stats: "&6/ibr stats [arena] &7- Shows your statistics"
+    leaderboard: "&6/ibr leaderboard <arena> [sort] &7- Shows leaderboard"
+    setup: "&6/ibr setup &7- Arena setup mode"
+    reload: "&6/ibr reload &7- Reload the plugin"
+
+  list:
+    no-arenas: "{prefix}&cNo arenas available!"
+    header: "&b&l▬▬▬ Available Arenas ▬▬▬"
+    arena: "&6{name} &7- &e{players}&7/&e{max} &7players"
+
+  info:
+    not-found: "{prefix}&cArena &6{arena}&c not found!"
+    header: "&b&l▬▬▬ Arena: {arena} ▬▬▬"
+    world: "&fWorld: &e{world}"
+    players: "&fPlayers: &e{min}&f-&e{max}"
+    checkpoints: "&fCheckpoints: &e{count}"
+    spawns: "&fSpawn Points: &e{count}"
+    powerups: "&fPower-ups: &e{count}"
+
+  stats:
+    select-arena: "{prefix}&eChoose an arena for detailed statistics:"
+    arena-not-found: "{prefix}&cArena &6{arena}&c not found!"
+    no-data: "{prefix}&cNo statistics found for arena &6{arena}&c!"
+    header: "&b&l▬▬▬ Stats: {player} - {arena} ▬▬▬"
+    races: "&fRaces played: &e{count}"
+    wins: "&fWins: &e{count}"
+    best-time: "&fBest Time: &e{time}"
+    avg-position: "&fAverage Position: &e{position}"
+
+  leaderboard:
+    select-arena: "{prefix}&eChoose an arena for the leaderboard:"
+    arena-not-found: "{prefix}&cArena &6{arena}&c not found!"
+    no-data: "{prefix}&cNo data available for arena &6{arena}&c!"
+    header: "&b&l▬▬▬ Leaderboard: {arena} ({sort}) ▬▬▬"
+    entry: "&6{rank}. &e{player} &7- &f{wins} wins, {time}"
+
+  setup:
+    info: "{prefix}&eSetup mode available. More features coming soon!"
+
+  reload:
+    success: "{prefix}&aPlugin successfully reloaded!"
+
+  race:
+    help:
+      header: "&b&l▬▬▬ Race Commands ▬▬▬"
+      join: "&6/race join <arena> &7- Join a race"
+      leave: "&6/race leave &7- Leave the race"
+      list: "&6/race list &7- Show active races"
+      status: "&6/race status &7- Show race status"
+
+    usage:
+      join: "{prefix}&cUsage: /race join <arena>"
+
+    list:
+      no-races: "{prefix}&cNo active races!"
+      header: "&b&l▬▬▬ Active Races ▬▬▬"
+      entry: "&6{arena} &7- &e{players}&7/&e{max} &7players - &f{state}"
+
+    status:
+      header: "&b&l▬▬▬ Race Status ▬▬▬"
+      arena: "&fArena: &e{arena}"
+      state: "&fState: &e{state}"
+      players: "&fPlayers: &e{current}&f/&e{max}"
+      time: "&fTime: &e{time}"
+      position: "&fPosition: &e{position}"
+
+setup:
+  left-click: "{prefix}&eLeft-click block at &6{x}, {y}, {z}"
+  right-click: "{prefix}&eRight-click block at &6{x}, {y}, {z}"

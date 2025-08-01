@@ -1,0 +1,32 @@
+name: IceBoatRacing
+version: 1.0.0
+main: de.somkat.iceboatracing.IceBoatRacingPlugin
+api-version: 1.21
+author: SomkatNetwork
+description: Ice boat racing plugin with checkpoints, power-ups, and multi-arena support
+
+commands:
+  iceboatracing:
+    description: Main IceBoatRacing command
+    aliases: [ibr, icerace]
+    usage: /iceboatracing <subcommand>
+  race:
+    description: Join or leave a race
+    usage: /race <join|leave|list>
+
+permissions:
+  iceboatracing.admin:
+    description: Admin permissions for IceBoatRacing
+    default: op
+  iceboatracing.setup:
+    description: Setup permissions for creating arenas
+    default: op
+  iceboatracing.play:
+    description: Permission to play races
+    default: true
+  iceboatracing.spectate:
+    description: Permission to spectate races
+    default: true
+
+depend: []
+softdepend: [PlaceholderAPI, Vault, WorldGuard]

@@ -1,0 +1,58 @@
+# IceBoatRacing Configuration
+# Plugin by SomkatNetwork
+
+# Database Configuration
+database:
+  # Database type: 'sqlite' or 'mysql'
+  type: sqlite
+  # MySQL/MariaDB settings (ignored if using SQLite)
+  host: localhost
+  port: 3306
+  database: iceboatracing
+  username: root
+  password: ""
+
+# Race Settings
+race:
+  # Countdown time before race starts (seconds)
+  countdown-time: 10
+  # Maximum race duration (seconds)
+  max-race-time: 600
+  # Reset cooldown (seconds)
+  reset-cooldown: 3
+  # Distance from track before auto-reset (blocks)
+  auto-reset-distance: 20
+
+# Power-up Settings
+powerups:
+  # Enable power-ups
+  enabled: true
+  # Time before power-ups respawn (seconds)
+  respawn-time: 30
+  # Power-up effect durations (milliseconds)
+  boost-duration: 5000
+  shield-duration: 10000
+  blocker-duration: 15000
+
+# GUI Settings
+gui:
+  # Enable persistent GUI display
+  enabled: true
+  # GUI update interval (ticks, 20 = 1 second)
+  update-interval: 20
+
+# Boat Settings
+boat:
+  # Speed multiplier on ice blocks
+  speed-multiplier: 1.5
+  # Speed multiplier on boost pads (gold blocks)
+  boost-multiplier: 2.5
+  # Speed multiplier on brake pads (slime blocks)
+  brake-multiplier: 0.3
+
+# Debug Settings
+debug:
+  # Enable debug messages
+  enabled: false
+  # Log race events
+  log-races: true

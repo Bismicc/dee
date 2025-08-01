@@ -1,0 +1,112 @@
+# IceBoatRacing Messages (German)
+# Use & for color codes and {variable} for placeholders
+
+# General Messages
+prefix: "&b[IceBoatRacing]&r "
+no-permission: "{prefix}&cDu hast keine Berechtigung für diesen Befehl!"
+players-only: "{prefix}&cDieser Befehl kann nur von Spielern ausgeführt werden!"
+unknown-command: "{prefix}&cUnbekannter Befehl! Verwende &6/ibr help&c für Hilfe."
+
+# Race Messages
+race:
+  joined: "{prefix}&aDu bist der Arena &6{arena}&a beigetreten! ({players}/{max} Spieler)"
+  left: "{prefix}&cDu hast die Arena verlassen."
+  already-in-race: "{prefix}&cDu befindest dich bereits in einem Rennen!"
+  not-in-race: "{prefix}&cDu befindest dich in keinem Rennen!"
+  arena-not-found: "{prefix}&cArena &6{arena}&c wurde nicht gefunden!"
+  join-failed: "{prefix}&cKonnte der Arena &6{arena}&c nicht beitreten!"
+  leave-failed: "{prefix}&cFehler beim Verlassen des Rennens!"
+  countdown: "{prefix}&eRennen startet in &6{time}&e Sekunden!"
+  started: "{prefix}&aRennen gestartet! Viel Glück!"
+  finished: "{prefix}&6Rennen beendet!"
+  finished-position: "{prefix}&aGlückwunsch! Du hast Platz &6{position}&a erreicht!"
+  checkpoint-reached: "{prefix}&aCheckpoint &6{checkpoint}&a/&6{total}&a erreicht!"
+  reset: "{prefix}&eZurück zum letzten Checkpoint teleportiert."
+  manual-reset: "{prefix}&eManuelle Rücksetzung durchgeführt."
+  reset-cooldown: "{prefix}&cReset-Abklingzeit aktiv! Warte noch einen Moment."
+  cannot-exit-boat: "{prefix}&cDu kannst das Boot während des Rennens nicht verlassen!"
+  no-teleport: "{prefix}&cTeleportation während des Rennens nicht möglich!"
+  results:
+    header: "&b&l▬▬▬ Rennergebnis ▬▬▬"
+    position: "&6{rank}. &e{player} &7- &f{time} &7({checkpoints} Checkpoints)"
+
+# Power-up Messages
+powerup:
+  collected: "{prefix}&apower-up &6{type}&a eingesammelt!"
+
+# Command Messages
+commands:
+  help:
+    header: "&b&l▬▬▬ IceBoatRacing Hilfe ▬▬▬"
+    list: "&6/ibr list &7- Zeigt alle verfügbaren Arenas"
+    info: "&6/ibr info <arena> &7- Zeigt Arena-Informationen"
+    stats: "&6/ibr stats [arena] &7- Zeigt deine Statistiken"
+    leaderboard: "&6/ibr leaderboard <arena> [sortierung] &7- Zeigt Bestenliste"
+    setup: "&6/ibr setup &7- Arena-Setup-Modus"
+    reload: "&6/ibr reload &7- Plugin neu laden"
+
+  list:
+    no-arenas: "{prefix}&cKeine Arenas verfügbar!"
+    header: "&b&l▬▬▬ Verfügbare Arenas ▬▬▬"
+    arena: "&6{name} &7- &e{players}&7/&e{max} &7Spieler"
+
+  info:
+    not-found: "{prefix}&cArena &6{arena}&c nicht gefunden!"
+    header: "&b&l▬▬▬ Arena: {arena} ▬▬▬"
+    world: "&fWelt: &e{world}"
+    players: "&fSpieler: &e{min}&f-&e{max}"
+    checkpoints: "&fCheckpoints: &e{count}"
+    spawns: "&fSpawn-Punkte: &e{count}"
+    powerups: "&fPower-ups: &e{count}"
+
+  stats:
+    select-arena: "{prefix}&eWähle eine Arena für detaillierte Statistiken:"
+    arena-not-found: "{prefix}&cArena &6{arena}&c nicht gefunden!"
+    no-data: "{prefix}&cKeine Statistiken für Arena &6{arena}&c gefunden!"
+    header: "&b&l▬▬▬ Statistiken: {player} - {arena} ▬▬▬"
+    races: "&fRennen gespielt: &e{count}"
+    wins: "&fSiege: &e{count}"
+    best-time: "&fBeste Zeit: &e{time}"
+    avg-position: "&fDurchschnittlicher Platz: &e{position}"
+
+  leaderboard:
+    select-arena: "{prefix}&eWähle eine Arena für die Bestenliste:"
+    arena-not-found: "{prefix}&cArena &6{arena}&c nicht gefunden!"
+    no-data: "{prefix}&cKeine Daten für Arena &6{arena}&c verfügbar!"
+    header: "&b&l▬▬▬ Bestenliste: {arena} ({sort}) ▬▬▬"
+    entry: "&6{rank}. &e{player} &7- &f{wins} Siege, {time}"
+
+  setup:
+    info: "{prefix}&eSetup-Modus verfügbar. Weitere Funktionen folgen!"
+
+  reload:
+    success: "{prefix}&aPlugin erfolgreich neu geladen!"
+
+  race:
+    help:
+      header: "&b&l▬▬▬ Race Commands ▬▬▬"
+      join: "&6/race join <arena> &7- Einem Rennen beitreten"
+      leave: "&6/race leave &7- Rennen verlassen"
+      list: "&6/race list &7- Aktive Rennen anzeigen"
+      status: "&6/race status &7- Rennstatus anzeigen"
+
+    usage:
+      join: "{prefix}&cVerwendung: /race join <arena>"
+
+    list:
+      no-races: "{prefix}&cKeine aktiven Rennen!"
+      header: "&b&l▬▬▬ Aktive Rennen ▬▬▬"
+      entry: "&6{arena} &7- &e{players}&7/&e{max} &7Spieler - &f{state}"
+
+    status:
+      header: "&b&l▬▬▬ Rennstatus ▬▬▬"
+      arena: "&fArena: &e{arena}"
+      state: "&fStatus: &e{state}"
+      players: "&fSpieler: &e{current}&f/&e{max}"
+      time: "&fZeit: &e{time}"
+      position: "&fPosition: &e{position}"
+
+# Setup Messages
+setup:
+  left-click: "{prefix}&eLinksklick auf Block bei &6{x}, {y}, {z}"
+  right-click: "{prefix}&eRechtsklick auf Block bei &6{x}, {y}, {z}"
